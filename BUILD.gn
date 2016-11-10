@@ -70,22 +70,8 @@ executable("vim") {
     "src/ops.c",
     "src/option.c",
     "src/option.h",
-    "src/os_amiga.c",
-    "src/os_amiga.h",
-    "src/os_beos.c",
-    "src/os_beos.h",
-    "src/os_dos.h",
-    "src/os_mac.h",
-    "src/os_mac_conv.c",
-    "src/os_mint.h",
-    "src/os_qnx.c",
-    "src/os_qnx.h",
     "src/os_unix.c",
     "src/os_unix.h",
-    "src/os_unixx.h",
-    "src/os_vms.c",
-    "src/os_vms_conf.h",
-    "src/os_vms_mms.c",
     "src/po/sjiscorr.c",
     "src/popupmnu.c",
     "src/proto.h",
@@ -122,5 +108,14 @@ executable("vim") {
     "src/wsdebug.c",
     "src/wsdebug.h",
     "src/xxd/xxd.c",
+  ]
+
+  include_dirs = [
+    "src",
+    "src/proto",
+  ]
+
+  defines = [
+    "HAVE_CONFIG_H",
   ]
 }
