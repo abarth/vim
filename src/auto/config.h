@@ -8,7 +8,7 @@
 /* #undef EBCDIC */
 
 /* Define unless no X support found */
-#define HAVE_X11 1
+/* #undef HAVE_X11 */
 
 /* Define when terminfo support found */
 #define TERMINFO 1
@@ -207,7 +207,7 @@
 /* #undef HAVE_SYSCTL */
 #define HAVE_SYSINFO 1
 #define HAVE_SYSINFO_MEM_UNIT 1
-#define HAVE_TGETENT 1
+/* #undef HAVE_TGETENT */
 #define HAVE_TOWLOWER 1
 #define HAVE_TOWUPPER 1
 #define HAVE_ISWUPPER 1
@@ -258,14 +258,14 @@
 #define HAVE_SYS_STATFS_H 1
 /* #undef HAVE_SYS_STREAM_H */
 #define HAVE_SYS_SYSCTL_H 1
-#define HAVE_SYS_SYSINFO_H 1
+/* #undef HAVE_SYS_SYSINFO_H */
 /* #undef HAVE_SYS_SYSTEMINFO_H */
 #define HAVE_SYS_TIME_H 1
 #define HAVE_SYS_TYPES_H 1
 #define HAVE_SYS_UTSNAME_H 1
-#define HAVE_TERMCAP_H 1
+/* #undef HAVE_TERMCAP_H */
 #define HAVE_TERMIOS_H 1
-#define HAVE_TERMIO_H 1
+/* #undef HAVE_TERMIO_H */
 #define HAVE_WCHAR_H 1
 #define HAVE_WCTYPE_H 1
 #define HAVE_UNISTD_H 1
@@ -389,7 +389,7 @@
 /* #undef FEAT_XFONTSET */
 
 /* Define if you want to include XIM support. */
-#define FEAT_XIM 1
+/* #undef FEAT_XIM */
 
 /* Define if you want to include Hangul input support. */
 /* #undef FEAT_HANGULIN */
