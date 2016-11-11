@@ -1326,7 +1326,9 @@ mch_init(void)
     Rows = 24;
 
     out_flush();
+#ifndef __Fuchsia__
     set_signals();
+#endif
 
 #ifdef MACOS_CONVERT
     mac_conv_init();
@@ -3371,7 +3373,7 @@ may_core_dump(void)
     }
 }
 
-#ifndef VMS
+#if !defined(VMS) && !defined(__Fuchsia__)
 
     void
 mch_settmode(int tmode)
@@ -3529,7 +3531,7 @@ get_stty(void)
 #endif
 }
 
-#endif /* VMS  */
+#endif /* !defined(VMS) && !defined(__Fuchsia__) */
 
 #if defined(FEAT_MOUSE_TTY) || defined(PROTO)
 /*

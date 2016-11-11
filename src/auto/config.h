@@ -156,7 +156,7 @@
 
 /* Define if you the function: */
 #define HAVE_BCMP 1
-#define HAVE_FCHDIR 1
+/* #undef HAVE_FCHDIR */
 #define HAVE_FCHOWN 1
 #define HAVE_FSEEKO 1
 #define HAVE_FSYNC 1
@@ -165,7 +165,7 @@
 #define HAVE_GETPWENT 1
 #define HAVE_GETPWNAM 1
 #define HAVE_GETPWUID 1
-#define HAVE_GETRLIMIT 1
+/* #undef HAVE_GETRLIMIT */
 #define HAVE_GETTIMEOFDAY 1
 #define HAVE_GETWD 1
 #define HAVE_ICONV 1
@@ -191,8 +191,8 @@
 /* #undef HAVE_SIGSET */
 /* #undef HAVE_SIGSETJMP */
 /* #undef HAVE_SIGSTACK */
-#define HAVE_SIGPROCMASK 1
-#define HAVE_SIGVEC 1
+/* #undef HAVE_SIGPROCMASK */
+/* #undef HAVE_SIGVEC */
 /* #undef HAVE_SMACK */
 #define HAVE_STRCASECMP 1
 #define HAVE_STRERROR 1
@@ -241,7 +241,7 @@
 /* #undef HAVE_PTHREAD_NP_H */
 #define HAVE_PWD_H 1
 #define HAVE_SETJMP_H 1
-#define HAVE_SGTTY_H 1
+/* #undef HAVE_SGTTY_H */
 #define HAVE_STDINT_H 1
 #define HAVE_STRINGS_H 1
 #define HAVE_STROPTS_H 1
@@ -264,7 +264,7 @@
 #define HAVE_SYS_TYPES_H 1
 #define HAVE_SYS_UTSNAME_H 1
 /* #undef HAVE_TERMCAP_H */
-#define HAVE_TERMIOS_H 1
+/* #undef HAVE_TERMIOS_H */
 /* #undef HAVE_TERMIO_H */
 #define HAVE_WCHAR_H 1
 #define HAVE_WCTYPE_H 1
@@ -305,7 +305,7 @@
 /* #undef NO_STRINGS_WITH_STRING_H */
 
 /* Define if you want tiny features. */
-/* #undef FEAT_TINY */
+#define FEAT_TINY 1
 
 /* Define if you want small features. */
 /* #undef FEAT_SMALL */
@@ -317,7 +317,7 @@
 /* #undef FEAT_BIG */
 
 /* Define if you want huge features. */
-#define FEAT_HUGE 1
+/* #undef FEAT_HUGE */
 
 /* Define if you want to include the Lua interpreter. */
 /* #undef FEAT_LUA */
@@ -431,10 +431,10 @@
 /* #undef FEAT_SUN_WORKSHOP */
 
 /* Define if you want to include NetBeans integration. */
-#define FEAT_NETBEANS_INTG 1
+/* #undef FEAT_NETBEANS_INTG */
 
 /* Define if you want to include process communication. */
-#define FEAT_JOB_CHANNEL 1
+/* #undef FEAT_JOB_CHANNEL */
 
 /* Define default global runtime path */
 /* #undef RUNTIME_GLOBAL */

@@ -63,7 +63,6 @@ executable("vim") {
     "src/move.c",
     "src/nbdebug.c",
     "src/nbdebug.h",
-    "src/netbeans.c",
     "src/normal.c",
     "src/ops.c",
     "src/option.c",

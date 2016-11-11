@@ -33,3 +33,13 @@ term_set_winsize(int width, int height)
 {
     // TODO(abarth): Not sure if we have a way to set the terminal size.
 }
+
+    void
+mch_settmode(int tmode)
+{
+}
+
+    void
+get_stty(void)
+{
+}
