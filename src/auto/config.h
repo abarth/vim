@@ -183,14 +183,14 @@
 #define HAVE_RENAME 1
 #define HAVE_SELECT 1
 /* #undef HAVE_SELINUX */
-#define HAVE_SETENV 1
-#define HAVE_SETPGID 1
-#define HAVE_SETSID 1
-#define HAVE_SIGACTION 1
-#define HAVE_SIGALTSTACK 1
-#define HAVE_SIGSET 1
+/* #undef HAVE_SETENV */
+/* #undef HAVE_SETPGID */
+/* #undef HAVE_SETSID */
+/* #undef HAVE_SIGACTION */
+/* #undef HAVE_SIGALTSTACK */
+/* #undef HAVE_SIGSET */
 /* #undef HAVE_SIGSETJMP */
-#define HAVE_SIGSTACK 1
+/* #undef HAVE_SIGSTACK */
 #define HAVE_SIGPROCMASK 1
 #define HAVE_SIGVEC 1
 /* #undef HAVE_SMACK */
@@ -413,7 +413,7 @@
 #define HAVE_GETTEXT 1
 
 /* Define if _nl_msg_cat_cntr is present. */
-#define HAVE_NL_MSG_CAT_CNTR 1
+/* #undef HAVE_NL_MSG_CAT_CNTR */
 
 /* Define if we have dlopen() */
 #define HAVE_DLOPEN 1

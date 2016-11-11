@@ -2,6 +2,12 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
+config("vim_config") {
+  cflags = [
+    "-Wno-unused-function",
+  ]
+}
+
 executable("vim") {
   sources = [
     "src/alloc.h",
@@ -39,6 +45,8 @@ executable("vim") {
     "src/globals.h",
     "src/hardcopy.c",
     "src/hashtab.c",
+    "src/if_cscope.c",
+    "src/if_cscope.h",
     "src/json.c",
     "src/keymap.h",
     "src/list.c",
@@ -60,6 +68,7 @@ executable("vim") {
     "src/ops.c",
     "src/option.c",
     "src/option.h",
+    "src/os_fuchsia.c",
     "src/os_unix.c",
     "src/os_unix.h",
     "src/popupmnu.c",
@@ -98,5 +107,9 @@ executable("vim") {
 
   defines = [
     "HAVE_CONFIG_H",
+  ]
+
+  configs += [
+    ":vim_config",
   ]
 }

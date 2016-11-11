@@ -3834,6 +3834,8 @@ mch_screenmode(char_u *arg UNUSED)
 
 #ifndef VMS
 
+#ifndef __Fuchsia__
+
 /*
  * Try to get the current window size:
  * 1. with an ioctl(), most accurate method
@@ -3919,6 +3921,8 @@ mch_get_shellsize(void)
     limit_screen_size();
     return OK;
 }
+
+#endif /* __Fuchsia__ */
 
 /*
  * Try to set the window size to Rows and Columns.
